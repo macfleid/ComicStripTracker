@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$DummySectionFragment" >
+    
+    <TextView
+        android:id="@+id/library_items_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textAllCaps="true"
+        android:drawableLeft="@drawable/navigation_previous_item_2"
+		android:background="@drawable/left_sided_button_large"
+        android:drawablePadding="20sp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+		android:paddingTop="10sp"
+		android:paddingBottom="10sp"
+		android:paddingLeft="10sp"
+        android:text="TextView"
+        
+         />
+    
+
+    <ListView
+        android:id="@+id/collection_items_listview_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/library_items_collection" >
+    </ListView>
+    
+
+</RelativeLayout>

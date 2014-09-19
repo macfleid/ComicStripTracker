@@ -1,0 +1,139 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity$DummySectionFragment" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0sp"
+                android:layout_marginLeft="10sp"
+                android:ems="10"
+                android:text="@string/scann_result_action" >
+            </TextView>
+
+            <Spinner
+                android:id="@+id/spinner_result_action"
+                android:layout_width="match_parent"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12sp"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/button_custom" />
+
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="10sp"
+                android:ems="10"
+                android:text="@string/comic_collection" >
+            </TextView>
+            <Spinner
+                android:id="@+id/spinner_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_marginTop="0sp" />
+            
+            <EditText
+                android:id="@+id/create_collection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:visibility="gone"
+                android:singleLine="true"
+                android:ems="10"
+                android:hint="@string/comic_collection"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/tome_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+                android:hint="@string/comic_tome"
+                android:inputType="numberDecimal" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/tome_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+                android:hint="@string/comic_name"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/tome_edition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+                android:hint="@string/comic_edition"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/tome_parution_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="@string/comic_year"
+                android:inputType="date" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <View
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                />
+                
+                <Button
+                    style="@style/button_"
+                    android:id="@+id/button_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_cancel" />
+
+                <Button
+                    style="@style/button_"
+                    android:id="@+id/button_validate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_validate" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

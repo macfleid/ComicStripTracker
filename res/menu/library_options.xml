@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/action_edit"
+        android:title="@string/watchlist_edit"/>
+    <item
+        android:id="@+id/action_share_item"
+        android:title="@string/watchlist_share_item"/>
+    <item
+        android:id="@+id/action_watch_delete"
+        android:title="@string/watchlist_delete"/>
+    <item
+        android:id="@+id/action_watch_cancel"
+        android:title="@string/watchlist_options_cancel"/>
+
+</menu>

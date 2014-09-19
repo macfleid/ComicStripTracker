@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0sp" >
+
+    <TextView
+        android:id="@+id/collection_comic_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp"
+        android:text="TextView"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:gravity="left"
+        android:paddingRight="10sp"
+        android:background="@drawable/title"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5sp" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title : "
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/collection_comic_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textAllCaps="true" />
+
+        <View
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tome : " />
+        <TextView
+            android:id="@+id/library_tome_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10sp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         android:layout_marginLeft="15sp"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:text="@string/collection_items_release_date" />
+
+        <TextView
+            android:id="@+id/collection_item_createddate"
+            android:textStyle="italic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:textSize="12sp"
+            android:text="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15sp"
+        android:paddingBottom="5sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:text="@string/collection_items_added_date" />
+
+        <TextView
+            android:id="@+id/collection_item_boughtdate"
+            android:layout_width="wrap_content"
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5sp"
+            android:text="text" />
+    </LinearLayout>
+
+</LinearLayout>
